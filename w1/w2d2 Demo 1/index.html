@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2 | Demo</title>
+
+    <meta name = "author" content = "JFAGRE">
+    <meta name = "description" content = "week 2 demo">
+
+</head>
+<style>
+    div {
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header {
+        border: 1px solid blue;
+    }
+
+    img{
+        margin: 10px;
+        padding: 10px;
+        flex-direction: row;
+    }
+</style>
+<body>
+    <!--Wrapper-->
+    <div id = "wrapper">
+
+    </div>
+
+    <!--Header-->
+    <div id = "header" class = "bg">
+        <h1>
+            week 2 demo
+        </h1>
+        <h2>Links, and Images</h2>
+    </div>
+
+    <!--Navbar-->
+
+    <div id = "nav">
+        <!--internal links-->
+        <a href = "text.txt" target = "_blank">Open My Text File</a>
+        <!--external links-->
+        <a href = "https://www.meca.edu" target = "_blank">visit MECA</a>
+        <!--Internal Jump links-->
+        <a href = "#bio">bio</a>
+        <a href = "#schools">schools</a>
+        <a href = "#hobbies">hobbies</a>
+
+        <br>
+
+        <a href = "#footer">jump to bottom</a>
+    </div>
+
+    <!--Bio-->
+    <div id = "bio">
+        <p>
+            my name is a name that exists
+        </p>
+    </div>
+
+    <!--Schools-->
+    <div id = "schools">
+        <h2>
+            My schooling
+            <ol>
+                <li>NEIT</li>
+                <li>Westerly High School</li>
+                <li>Westerly Middle School</li>
+            </ol>
+        </h2>
+    </div>
+
+    <!--Hobbies-->
+
+    <div id = "hobbies">
+        <ul>
+            <li>Surf</li>
+            <img src = "https://i.ytimg.com/vi/exAAYJ-hlDI/maxresdefault.jpg" alt = "waves" width = "500">
+            <li>Build Keyboards</li>
+            <img src = "images/keyboad.jpg" width = "500">
+        </ul>
+    </div>
+
+    <!--Footer-->
+    <div id = "footer" class = "bg">
+        <a href = "#header">Jump To Top</a>
+        <p>
+            J FAGRE | SE 111.02
+        </p>
+    </div>
+
+    
+</body>
+</html>

@@ -12,6 +12,7 @@ body {
 #container {
     width: 80%;
     margin: 0 auto;
+    text-align: center; /* Added property */
 }
 
 /* Navbar styles */
@@ -20,6 +21,7 @@ nav {
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 nav a {
@@ -33,7 +35,8 @@ nav a {
 
 nav a:hover {
     background-color: #555;
-    height: 95%;}
+    height: 95%;
+}
 
 /* Header styles */
 #header {
@@ -63,16 +66,22 @@ nav a:hover {
 
 #schooling ol {
     list-style-type: decimal;
+    text-align: center;
+    padding-left: 0; /* added this so the bullets / numbers would align in center with text */
 }
 
 #hobbies ul {
-    list-style-type: disc;
+    list-style-type:georgian; /* just experimenting with different list styles */
+    text-align: center;
+    padding-left: 0;
 }
 
 #schooling li, 
 #hobbies li, 
-#bio li{
+#bio li {
     margin-bottom: 15px;
+    text-align: center;
+    list-style-position: inside; /* added this so the bullets / numbers would align in center wityh text */
 }
 
 #schooling img,
@@ -84,19 +93,23 @@ nav a:hover {
     border-radius: 8px;
     margin: 8px 10px 10px 0;
     aspect-ratio: 16/9;
-    object-fit: cover;
-    }
+    object-fit: cover; /* added this so the images wouldnt stretch */
+}
 
-    #hobbies a {
+#hobbies a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    }
+}
 
-    #hobbies a:hover {
+#hobbies a:hover {
     color: #c7c7c7;
     text-decoration: underline;
-    }
+}
+
+#container {
+    text-align: center;
+}
 
 /* Footer styles */
 #footer {
@@ -121,5 +134,10 @@ nav a:hover {
 
 #footer a:hover {
     background-color: #777;
+}
+
+#container {
+    width: 95%;
+    margin: 0 auto;
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/br-cobane');
+
 .nav-container {
     background-color: #333;
     top: 20px;
@@ -5,7 +7,7 @@
     transform: translateX(-50%);
     width: 96%;
     height: 80px;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +35,7 @@
 
 body {
     background-color: #333;
+    font-family: 'br-cobane', sans-serif;
 }
 
 .nav-container h1 {
@@ -55,7 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 40px;
 }
 
 .title h2 {
@@ -74,6 +77,7 @@ body {
     width: 60%;
     font-size: 20px;
     color: white;
+    margin-top: 45px;
 }
 
 .poster img {
@@ -82,11 +86,125 @@ body {
     border-radius: 20px;
 }
 
-video {
-    width: 600px;
-    height: 300px;
+ iframe {
+    width: 300px;
+    height: 200px;
     border-radius: 20px;
     border: solid 3px #7f3eaa;
     margin-top: 25px;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.178);
+}
+
+/* end of main home page styles */
+
+/* start of footer styles */
+
+.footer-container {
+    background-color: #2f125059;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: 40px;
+}
+
+.footer-container p {
+    color: white;
+    font-size: 16px;
+    margin-right: 35px;
+}
+
+.footer-container a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.25s ease-in-out;
+    margin-right: 15px;
+}
+
+.footer-container a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* end of footer styles */
+
+/* start of cast page styles */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px; /* vertical gap */
+    column-gap: -45px; /* horizontal gap */
+    align-items: center;
+    margin-top: 45px;
+    margin-left: 35px;
+    width: 1285px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.card-content p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #ffffff9d;
+}
+
+.card {
+    display: flex;
+    background-color: #f4f4f400;
+    width: 400px;
+    height: 140px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border: solid 3px #7f3eaa49;
+}
+
+.card img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card-content {
+    width: 50%;
+    padding: 10px;
+}
+
+.cast h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 45px;
+    margin-top: 80px;
+}
+
+/* end of cast page styles */
+
+/* start of review page styles */
+
+.review h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 38px;
+    margin-top: 80px;
+}
+
+.review p {
+    color: white;
+    font-size: 20px;
+    margin-left: 38px;
+    margin-top: 20px;
+    width: 60%;
 }

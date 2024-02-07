@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5 | Tables & Forms</title>
+</head>
+<body>
+    
+    <h1>Basic Form Demo</h1>
+
+    <form>
+
+        <!--labels are used to match with input elements-->
+        <!--'for' attribute connects labels with the input values (matching 'name' atttribute value)-->
+
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName">
+
+        <br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="lastName">
+
+        <br>
+
+        <label for="age">Age: </label>
+        <input type="text" name="age" id="age">
+
+
+    </form>
+
+    <hr>
+
+
+    <h2>Form using a Table</h2>
+
+    <form method = "GET" action = "confirm.html">
+
+        <table>
+            <!--thead handles column headers / labels for columns-->
+            <thead>
+                <tr>
+                    <td>
+                        <h2>Questions: </h2>
+                    </td>
+                    <td>
+                        <h2>Answers: </h2>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody> <!--tbody always holds main form fields-->
+                <!--Table Row-->
+                <tr>
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="fName">First Name:</label>
+                    </td>
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="text" name="fName" id="fName">
+                    </td>
+                </tr>
+
+                <!--Table Row-->
+                <tr>
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="lName">Last Name:</label>
+                    </td>
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="text" name="lName" id="lName">
+                    </td>
+                </tr>
+
+                <!--Table Row-->
+                <tr>
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="age">Age:</label>
+                    </td>
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="number" name="age" id="age" min = "0" max = "120">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="favcolor">Pick your favorite color:</label>
+                    </td>
+                    <!--second column- INPUT -->
+                    <td>
+                        <select name = "favcolor" id = "favcolor">
+                            <option value = "red" style = "color: red;">Red</option>
+                            <option value = "blue" style = "color: blue;">Blue</option>
+                            <option value = "green" style = "color: green;">Green</option>
+                            <option value = "yellow" style = "color: yellow;">Yellow</option>
+                            <option value = "orange" style = "color: orange;">Orange</option>
+                            <option value = "purple" style = "color: blueviolet;">Purple</option>
+                            <option value = "black" style = "color: black;">Black</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="study">Program of study:</label>
+                    </td>
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type = "radio" name = "study" id = "study1" value = "SE">
+                        Software Engineering<br>
+                        <input type = "radio" name = "study" id = "study2" value = "WD">
+                        Web Development<br>
+                        <input type = "radio" name = "study" id = "study3" value = "NE">
+                        Networking<br>
+                        <input type = "radio" name = "study" id = "study4" value = "CYB">
+                        Cybersecurity
+                    </td>
+                </tr>
+
+                <!--submit button row-->
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </form>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w6 pay calc</title>
+    <meta name="author" content="jayden fagre">
+    <link rel="stylesheet" href="paycalc.css">
+</head>
+<body>
+    <h1>Pay Calculator</h1>
+    <div id="output"></div>
+    <script>
+        let hours = prompt("Please enter the number of hours worked in a 2 week period", "0");
+        let rate = prompt("Please enter your hourly rate", "0");
+        if (hours != null && rate != null) {
+            let grossPay = hours * rate;
+            let taxRate = 0.20; // 20% tax rate
+            let tax = grossPay * taxRate;
+            let netPay = grossPay - tax;
+
+            let output = document.getElementById('output');
+            output.innerHTML = "Your gross pay for the 2 week period is: $" + grossPay.toFixed(2) + "<br>";
+            output.innerHTML += "Tax taken out: $" + tax.toFixed(2) + "<br>";
+            output.innerHTML += "Your net pay for the 2 week period is: $" + netPay.toFixed(2);
+        }
+    </script>
+</body>
+</html>

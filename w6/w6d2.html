@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w6d2 demo</title>
+    <meta name="author" content="Jayden Fagre">
+    <style>
+        body {
+            background-color: #313131;
+        }
+    </style>
+</head>
+<body>
+    <h1>W6 | Intro to javascript demo</h1>
+
+    <!--use script tags after content-->
+    <script>
+        var name
+        name = "Jayden"
+        var newname = "Jayden Fagre"   //combine
+        var num1 = 10
+        var num2 = 7
+        var sum = num1 + num2
+
+        //output to console (only for developers)
+        console.log(name)
+        console.log(name, newname)
+        console.log(`1st name: ${name} \n1st and last name: ${newname}`)
+
+        //alert
+        alert(`The sum of ${num1} and ${num2} is ${sum}`)
+        console.log(`The sum of ${num1} and ${num2} is ${sum}`)
+        alert(`SUM TOTAL: $${sum.toFixed(2)}`)
+
+        //prompt  browser pop up
+        var lname = prompt(`hi ${name}, whats your last name?`)
+
+        alert(`Hello ${name} ${lname}`)
+
+        var number = prompt(`Enter a number`)
+        var multiply = number * 10
+
+        alert(`Your number times 10 is ${multiply.toFixed(2)}`)
+        console.log(`Your number times 10 is ${multiply.toFixed(2)}`)
+
+
+    </script>
+</body>
+</html>

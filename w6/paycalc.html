@@ -11,19 +11,18 @@
     <h1>Pay Calculator</h1>
     <div id="output"></div>
     <script>
-        let hw = prompt("Please enter the number of hours worked in a 2 week period", "0.00");
-        let hr = prompt("Please enter your hourly rate", "0.00");
-        if (hw && hr) { // for when both values arent empty
-            let gross = hw * hr; // gross pay
-            let taxr = 0.20; // tax rate
-            let tax = gross * taxr; // tax taken out
-            let net = gross - tax; // net pay
+        var hw = prompt("Please enter the number of hours worked in a 2 week period", "0.00");
+        var hr = prompt("Please enter your hourly rate", "0.00");
+        var gross = hw * hr; // gross pay
+        var taxr = 0.20; // tax rate
+        var tax = gross * taxr; // tax taken out
+        var net = gross - tax; // net pay
 
-            let output = document.getElementById('output'); // get the output div
-            output.innerHTML = "Your gross pay for the 2 week period is: $" + gross.toFixed(2) + "<br>"; // set the output div to the gross pay
-            output.innerHTML += "Tax taken out: $" + tax.toFixed(2) + "<br>"; // add tax taken out to the output div
-            output.innerHTML += "Your net pay for the 2 week period is: $" + net.toFixed(2); // add net pay to the output div
-        }
+        var output = document.getElementById('output'); // get the output div
+        output.innerHTML = "Your gross pay for the 2 week period is: $" + gross.toFixed(2) + "<br>"; // set the output div to the gross pay
+        output.innerHTML += "Tax taken out: $" + tax.toFixed(2) + "<br>"; // add tax taken out to the output div
+        output.innerHTML += "Your net pay for the 2 week period is: $" + net.toFixed(2); // add net pay to the output div
+        
     </script>
 </body>
 </html>

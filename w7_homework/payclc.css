@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #353535;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #57575700;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: -50px;
+}
+
+p {
+    color: #f3bcbc;
+}
+
+/* end of main styling */
+
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #fff;
+    margin-top: 10px;
+}
+
+#enter-button, #confirm-button {
+    padding: 10px;
+    background-color: #9bffde;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.1s;
+}
+
+#confirm-button {
+    margin-bottom: 40px;
+}
+
+#enter-button:hover, #confirm-button:hover {
+    background-color: #64adff;
+}
+
+#enter-button:active, #confirm-button:active{
+    transform: scale(0.95);
+}
+
+/* end of main styling */
+
+
+
+
+

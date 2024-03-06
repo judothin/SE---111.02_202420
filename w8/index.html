@@ -36,13 +36,15 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		
+		var firstVal = document.getElementById('first');
+		var lastVal = document.getElementById('last');
+		var button = document.getElementById('button');
 
 		//Make an array to store the people
-		
+		var people = [];
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		
+		document.getElementById('button').addEventListener('click', calcAndDisplay);
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -61,6 +63,8 @@
 
 		function calcAndDisplay(e)
 		{
+			var outputDiv = document.getElementById('output');
+			outputDiv.innerHTML = '';
 			//Create an object called person.
 			//Add the following properties:
 			    //1. first: will be a string that uses the first Input's value
@@ -99,12 +103,13 @@
 			
 
 			//Loop through the objects in the people array
-			for()
+			for(let i=0; i < people.length; i++)
             {
 
 				//Loop through each property in the object
 				for(key in people[i])
                 {
+					output += `<p><strong>${key.toUpperCase()}:</strong> ${people[i][key]}</p>`;
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
@@ -113,14 +118,14 @@
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+				output += '<hr>';
 
 
 			}//end of loop going through people array to edit 'output'
-
+			console.log(output);
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
-				
+			outputDiv.innerHTML += output;
 
 
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jayden Fagre"> <!-- Add the meta author tag here -->
+    <title>W9 | Creating Elements</title>
+    
+
+    <style>
+        body {
+            color: #333;
+        }
+
+        .border {
+            border: 1px solid #653269;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        p {
+            margin-left: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #container {
+            width: 99%;
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <div id="container">
+            <script>
+                var people =[
+                    {first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+                    {first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+                    {first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+                    {first:"Kevin", last:"McCallister", credit:"Home Alone" },
+                    {first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+                    {first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+                    {first:"Marion", last:"Cobretti", credit:"Cobra" }
+                ]
+
+                // added container to make it easier to center boxes
+                var container = document.querySelector("#container")
+
+                for (let i = 0; i < people.length; i++) {
+                    var tempDiv = document.createElement("div")
+                    tempDiv.setAttribute("id", people[i].first)
+                    tempDiv.setAttribute("class", "border")
+
+                    for (let key in people[i]) {
+                        var p = document.createElement("p")
+                        var text = document.createTextNode(people[i][key])
+                        p.appendChild(text)
+                        tempDiv.appendChild(p)
+                    }
+
+                    container.appendChild(tempDiv)
+                }
+            </script>
+        </div>
+    </body>
+    </html>
